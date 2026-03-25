@@ -3,7 +3,7 @@
 pkgname=boost
 pkgver=1.89.0
 _pkgver="${pkgver//./_}"
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="Free peer-reviewed portable C++ source libraries"
 url="https://www.boost.org/"
 arch="all"
@@ -154,7 +154,6 @@ _pyversion() {
 	"$1" -c 'import sys; print("%i.%i" % (sys.version_info.major, sys.version_info.minor))'
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 5153fe92372c40afb400482c5dcb6043d3f64ad58b8e579d8f8a9a9c3dc66737a567ad8ccaa45c49ea02166ef9283c4904700d25971742d9b5fdf39b21fb2aa7  boost_1_89_0.tar.bz2
 "
